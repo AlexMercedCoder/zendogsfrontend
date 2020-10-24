@@ -6,7 +6,7 @@ import Form from "./Form";
 
 function App() {
   // Variable to hold url
-  const url = "http://amzendogsbackend.herokuapp.com";
+  const url = "https://amzendogsbackend.herokuapp.com";
   //State to Hold Dogs
   const [dogs, setDogs] = React.useState([]);
   // Empty Dog
@@ -81,11 +81,12 @@ function App() {
             exact
             path="/"
             render={(rp) => (
-              <Display 
-              selectDog={selectDog} 
-              {...rp} 
-              dogs={dogs}
-              deleteDog={deleteDog} />
+              <Display
+                selectDog={selectDog}
+                {...rp}
+                dogs={dogs}
+                deleteDog={deleteDog}
+              />
             )}
           />
           <Route
